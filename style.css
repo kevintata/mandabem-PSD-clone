@@ -1,34 +1,56 @@
 @charset "UTF-8";
+
 body {
     margin: 0;
     background: #ffffff;
     overflow-x: hidden;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+#content{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
+    /* min-height: 100vh; */
+    
 }
 
 header{
-    position: absolute;
+    /* position: absolute; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
     top: 0;
     left: 0;
 }
 
 main{
-    position: absolute;
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    top: 169px;
-    z-index: 1;
+    flex-direction: column;
+    /* top: 169px; */
+    padding: 29px 29px 18px 29px;
+    /* z-index: 1; */
     width: 528px;
-    height: 663px;
+    max-width: 100%;
+    margin: 0 auto;
+    /* height: auto; */
+    /* height: 663px; */
+    /* padding-bottom: 200px; */
 }
 
 footer{
-    position: absolute;
-    bottom: 0;
+    
+    /* padding-top: 20px; */
     width: 100%;
+    margin-top: auto;
 }
 
 
@@ -194,7 +216,7 @@ footer{
 /* Tablet screens */
   @media screen and (min-width: 550px) {
     #header {
-        background: linear-gradient(to right, #e9492a 20%,#e72357);
+        background: linear-gradient(to right, #e9492a 35%,#e72357 70%);
         /* background-color: purple; */
         width: 100vw;
         height: 140px;
@@ -282,7 +304,7 @@ footer{
         flex-direction: column;
     }
     #nrfCardImg{
-        margin-bottom: 16px;
+        margin-bottom: 12px;
     }
     #nrfCardDescription{
         display: flex;
@@ -313,7 +335,7 @@ footer{
     }
     #nbaCardImg{
         width: 251px;
-        margin-bottom: 8px;
+        margin-bottom: 10px;
     }
     #nbaCardDescription{
         display: flex;
@@ -333,7 +355,7 @@ footer{
     }
     #WhatsAppCardImg{
         width: 261px;
-        margin-bottom: 8px;
+        margin-bottom: 9px;
     }
     #WhatsAppCardDescription{
         display: flex;
@@ -343,14 +365,18 @@ footer{
         height: 76px;
     }
      #WhatsAppTitle{
-        /* margin-bottom: 0px; */
+        margin-bottom: 2px;
     }
+    
     #footerLogo{
+        position: relative;
         display: flex;
         justify-content: center;
         align-items: center;
         background:#FB4C03;
         height: 81px;
+        width: 100%;
+        bottom: 0px;
     }
     #footerCopyright{
         display: flex;
