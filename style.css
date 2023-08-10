@@ -1,0 +1,515 @@
+@charset "UTF-8";
+body {
+    margin: 0;
+    background: #ffffff;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+main{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 169px;
+    z-index: 1;
+    width: 528px;
+    height: 663px;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+
+
+
+/* Small mobile screens */
+@media screen and (min-width: 250px) {
+    #header {
+        /* background: linear-gradient(to right, #e9492a 20%,#e72357); */
+        background-color: black;
+        width: 100vw;
+        height: 140px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        overflow: hidden;
+    }
+    
+    #blurred-lines {
+        position: absolute;
+        top: 21px;
+        left: -34px;
+    }
+    
+    #mandatrends-header {
+        position: absolute;
+        height: 45px;
+        left: 40px;
+        z-index: 1;
+    }
+    
+    #bolinhas {
+        height: 62px;
+        position: absolute;
+        top: 114px;
+        left: 120px;
+    }
+    
+    #mulher {
+        position: absolute;
+        top: 51px;
+        align-self: center;
+        margin-left: 130px;
+    }
+    
+    #arrows {
+        position: absolute;
+        top: 20px;
+        margin-left: 60px;
+    }
+
+    #triangle {
+        position: absolute;
+        top: 5px;
+        right: 20px;
+    }
+    
+    #nrf {
+        position: absolute;
+        height: 71px;
+        top: 30px;
+        right: 38px;
+        display: none;
+    }
+    
+    #squiggle {
+        position: absolute;
+        height: 8px;
+        top: 110px;
+        right: 40px;
+        display: none;
+    }
+  }
+
+
+
+
+
+
+
+
+
+  /* Mobile screens */
+@media screen and (min-width: 450px) {
+    #header {
+        /* background: linear-gradient(to right, #e9492a 20%,#e72357); */
+        background-color: pink;
+        width: 100vw;
+        height: 140px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        overflow: hidden;
+    }
+    
+    #blurred-lines {
+        position: absolute;
+        top: 21px;
+        left: -31px;
+    }
+    
+    #mandatrends-header {
+        position: absolute;
+        height: 48px;
+        left: 40px;
+        z-index: 1;
+    }
+    
+    #bolinhas {
+        height: 62px;
+        position: absolute;
+        top: 114px;
+        left: 170px;
+    }
+    
+    #mulher {
+        position: absolute;
+        top: 51px;
+        align-self: center;
+        margin-left: 50px;
+    }
+    
+    #arrows {
+        position: absolute;
+        height: 21px;
+        top: 20px;
+        margin-right: 95px;
+    }
+
+    #triangle {
+        position: absolute;
+        top: 5px;
+        right: 20px;
+    }
+    
+    #nrf {
+        position: absolute;
+        height: 60px;
+        top: 30px;
+        right: 30px;
+        display: block;
+    }
+    
+    #squiggle {
+        position: absolute;
+        height: 8px;
+        top: 110px;
+        right: 30px;
+        display: block;
+    }
+  }
+
+
+
+
+
+
+
+
+
+/* Tablet screens */
+  @media screen and (min-width: 550px) {
+    #header {
+        background: linear-gradient(to right, #e9492a 20%,#e72357);
+        /* background-color: purple; */
+        width: 100vw;
+        height: 140px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        overflow: hidden;
+    }
+    
+    #blurred-lines {
+        position: absolute;
+        top: 21px;
+        left: -17px;
+    }
+    
+    #mandatrends-header {
+        position: absolute;
+        height: 67px;
+        left: 40px;
+        z-index: 1;
+    }
+    
+    #bolinhas {
+        height: 62px;
+        position: absolute;
+        top: 114px;
+        left: 235px;
+    }
+    
+    #mulher {
+        position: absolute;
+        top: 51px;
+        align-self: center;
+        margin-left: 107px;
+    }
+    
+    #arrows {
+        position: absolute;
+        top: 20px;
+        margin-left: 120px;
+    }
+
+    #triangle {
+        position: absolute;
+        top: 5px;
+        right: 20px;
+    }
+    
+    #nrf {
+        position: absolute;
+        height: 71px;
+        top: 30px;
+        right: 38px;
+        display: block;
+    }
+    
+    #squiggle {
+        position: absolute;
+        height: 8px;
+        top: 110px;
+        right: 40px;
+    }
+
+    #container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 37px;
+        /* NRF Height 345px */
+        /* NBA Height 281px */
+    }
+    #subContainer{
+        display: flex;
+        justify-content: center;
+        align-items:flex-start;
+        flex-direction: row;
+        gap: 14px;
+    }
+
+    #nrfCard{
+        display: flex;
+        justify-content: start;
+        flex-direction: column;
+    }
+    #nrfCardImg{
+        margin-bottom: 16px;
+    }
+    #nrfCardDescription{
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+        flex-direction: column;
+        height: 95px;
+    }
+    #nrfTitle{
+        padding-left: 2px;
+    }
+    #nrfText{
+        padding-left: 1px;
+        margin-top: -1px;
+        margin-bottom: 8px;
+    }
+    #nrfSource{
+        padding-left: 1px;
+    }
+    #nrfLine{
+        padding-left: 0px;
+    }
+
+    #nbaCard{
+        display: flex;
+        justify-content: start;
+        flex-direction: column;
+    }
+    #nbaCardImg{
+        width: 251px;
+        margin-bottom: 8px;
+    }
+    #nbaCardDescription{
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+        flex-direction: column;
+        height: 76px;
+    }
+     #nbaTitle{
+        margin-bottom: 3px;
+    }
+
+    #WhatsAppCard{
+        display: flex;
+        justify-content: start;
+        flex-direction: column;
+    }
+    #WhatsAppCardImg{
+        width: 261px;
+        margin-bottom: 8px;
+    }
+    #WhatsAppCardDescription{
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+        flex-direction: column;
+        height: 76px;
+    }
+     #WhatsAppTitle{
+        /* margin-bottom: 0px; */
+    }
+    #footerLogo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background:#FB4C03;
+        height: 81px;
+    }
+    #footerCopyright{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: #F1F1F1;
+        height: 64px;
+    }
+}
+
+
+
+
+
+
+
+
+
+/* Laptop screens */
+@media screen and (min-width: 769px) {
+    #header {
+        /* background: linear-gradient(to right, #e9492a 20%,#e72357); */
+        background: gray;
+        width: 100vw;
+        height: 140px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        overflow: hidden;
+    }
+    
+    #blurred-lines {
+        position: absolute;
+        top: 21px;
+        left: -17px;
+    }
+    
+    #mandatrends-header {
+        position: absolute;
+        height: 67px;
+        left: 40px;
+    }
+    
+    #bolinhas {
+        height: 62px;
+        position: absolute;
+        top: 114px;
+        left: 235px;
+    }
+    
+    #mulher {
+        position: absolute;
+        top: 51px;
+        align-self: center;
+        margin-left: 107px;
+    }
+    
+    #arrows {
+        position: absolute;
+        top: 20px;
+        margin-left: 120px;
+    }
+    
+    #triangle {
+        position: absolute;
+        top: 5px;
+        right: 20px;
+    }
+
+    #nrf {
+        position: absolute;
+        height: 71px;
+        top: 30px;
+        right: 38px;
+        display: block;
+    }
+    
+    #squiggle {
+        position: absolute;
+        height: 10px;
+        top: 110px;
+        right: 40px;
+    }
+  }
+
+
+
+
+
+
+
+
+
+  /* Extra large screens */
+  @media screen and (min-width: 1202px) {
+    #header {
+        /* background: linear-gradient(to right, #e9492a 20%,#e72357); */
+        background: blue;
+        width: 100vw;
+        height: 140px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        overflow: hidden;
+    }
+    
+    #blurred-lines {
+        position: absolute;
+        top: 21px;
+        left: -17px;
+    }
+    
+    #mandatrends-header {
+        position: absolute;
+        height: 67px;
+        left: 40px;
+    }
+    
+    #bolinhas {
+        height: 62px;
+        position: absolute;
+        top: 114px;
+        left: 235px;
+    }
+    
+    #mulher {
+        position: absolute;
+        top: 51px;
+        align-self: center;
+        margin-left: 107px;
+    }
+    
+    #arrows {
+        position: absolute;
+        top: 20px;
+        margin-left: 115px;
+    }
+
+    #triangle {
+        position: absolute;
+        top: 5px;
+        right: 20px;
+    }
+    
+    #nrf {
+        position: absolute;
+        height: 71px;
+        top: 30px;
+        right: 38px;
+        display: block;
+    }
+    
+    #squiggle {
+        position: absolute;
+        height: 10px;
+        top: 110px;
+        right: 40px;
+    }
+  } 
