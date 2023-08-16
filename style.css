@@ -197,13 +197,13 @@ footer {
     }
 
     .longCardImg{
-        height: 175px;
+        height: 125px;
     }
     .longTitle{
-        width: 375px;
+        width: 280px;
     }
     .longText{
-        width: 350px;
+        width: 275px;
     }
 
     .longCardDescription{
@@ -354,13 +354,13 @@ footer {
     }
 
     .longCardImg{
-        height: 200px;
+        height: 175px;
     }
     .longTitle{
-        width: 440px;
+        width: 375px;
     }
     .longText{
-        width: 400px;
+        width: 350px;
     }
 
     .longCardDescription{
