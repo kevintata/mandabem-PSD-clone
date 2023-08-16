@@ -1,5 +1,33 @@
 @charset "UTF-8";
 
+h1{
+    margin-top: -8px;
+    margin-bottom: -8px;
+}
+h3{
+    display: block;
+}
+#foodCard h3{
+    font-size: 1.1em;
+    margin-top: 16px;
+    margin-bottom: 8px;
+    
+}
+#trailCard h3{
+    font-size: 1.15em;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+p {
+    font-size: 11pt;
+    color: #757676;
+}
+a{
+    text-decoration: none;
+}
+a:visited{
+    color: inherit;
+}
 body {
     margin: 0;
     background: #ffffff;
@@ -43,14 +71,17 @@ footer{
     margin-top: auto;
 }
 
+.dissapear{
+    display: none;
+}
 
 
 
 /* Small mobile screens */
 @media screen and (min-width: 250px) {
     #header {
-        /* background: linear-gradient(to right, #e9492a 20%,#e72357); */
-        background-color: black;
+        background: linear-gradient(to right, #e9492a 20%,#e72357);
+        /* background-color: black; */
         width: 100vw;
         height: 140px;
         display: flex;
@@ -114,6 +145,9 @@ footer{
         right: 40px;
         display: none;
     }
+    .dissapear{
+        display: none;
+    }
   }
 
 
@@ -127,8 +161,8 @@ footer{
   /* Mobile screens */
 @media screen and (min-width: 450px) {
     #header {
-        /* background: linear-gradient(to right, #e9492a 20%,#e72357); */
-        background-color: pink;
+        background: linear-gradient(to right, #e9492a 20%,#e72357);
+        /* background-color: pink; */
         width: 100vw;
         height: 140px;
         display: flex;
@@ -192,6 +226,9 @@ footer{
         top: 110px;
         right: 30px;
         display: block;
+    }
+    .dissapear{
+        display: none;
     }
   }
 
@@ -288,33 +325,42 @@ footer{
         gap: 14px;
     }
 
-    #nrfCard{
+    #longCardContainer{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .longCard{
         display: flex;
         justify-content: start;
         flex-direction: column;
     }
-    #nrfCardImg{
+    .longCardImg{
         margin-bottom: 12px;
     }
-    #nrfCardDescription{
+    .longCardDescription{
         display: flex;
         align-items: start;
         justify-content: space-between;
         flex-direction: column;
         height: 95px;
     }
-    #nrfTitle{
+    .longTitle{
         padding-left: 2px;
     }
-    #nrfText{
+    .longText{
         padding-left: 1px;
         margin-top: -1px;
         margin-bottom: 8px;
     }
-    #nrfSource{
+    .longSource{
         padding-left: 1px;
     }
-    #nrfLine{
+    .longLine{
+        padding-left: 0px;
+    }
+    .longLinePhone{
+        padding-top: 7px;
         padding-left: 0px;
     }
 
@@ -376,6 +422,9 @@ footer{
         background: #F1F1F1;
         height: 64px;
     }
+    .dissapear{
+        display: none;
+    }
 }
 
 
@@ -389,8 +438,8 @@ footer{
 /* Laptop screens */
 @media screen and (min-width: 769px) {
     #header {
-        /* background: linear-gradient(to right, #e9492a 20%,#e72357); */
-        background: gray;
+        background: linear-gradient(to right, #e9492a 20%,#e72357);
+        /* background: gray; */
         width: 100vw;
         height: 140px;
         display: flex;
@@ -465,8 +514,8 @@ footer{
   /* Extra large screens */
   @media screen and (min-width: 1202px) {
     #header {
-        /* background: linear-gradient(to right, #e9492a 20%,#e72357); */
-        background: blue;
+        background: linear-gradient(to right, #e9492a 20%,#e72357);
+        /* background: blue; */
         width: 100vw;
         height: 140px;
         display: flex;
@@ -527,5 +576,34 @@ footer{
         height: 10px;
         top: 110px;
         right: 40px;
+    }
+
+    #foodCardDescription{
+        margin-top: -10px;
+        margin-bottom: -4px;
+    }
+
+    #container{
+        align-items: flex-start;
+        flex-direction: row;
+        padding-bottom: 30px;
+    }
+
+    #subContainer{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 37px;
+        row-gap: 82px;
+    }
+
+    #nbaCard{
+        grid-row: 1; 
+        grid-column: 1;   
+    }
+    
+
+    .dissapear{
+        display: block;
     }
   } 
