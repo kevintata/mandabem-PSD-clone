@@ -112,6 +112,10 @@ footer {
 
 /* Small mobile screens */
 @media screen and (min-width: 0px) {
+    main {
+        width: auto;
+    }
+
     #header {
         background: linear-gradient(to right, #e9492a 20%,#e72357);
         /* background-color: black; */
@@ -269,6 +273,10 @@ footer {
 
   /* Mobile screens */
 @media screen and (min-width: 450px) {
+    main {
+        width: auto;
+    }
+
     #header {
         background: linear-gradient(to right, #e9492a 20%,#e72357);
         /* background-color: pink; */
@@ -426,6 +434,10 @@ footer {
 
 /* Tablet screens */
 @media screen and (min-width: 575px) {
+    main {
+        width: 528px;
+    }
+
     #header {
         background: linear-gradient(to right, #e9492a 35%,#e72357 70%);
         /* background-color: purple; */
@@ -606,6 +618,10 @@ footer {
 
 /* Laptop screens */
 @media screen and (min-width: 769px) {
+    main {
+        width: 528px;
+    }
+    
     #header {
         background: linear-gradient(to right, #e9492a 20%,#e72357);
         /* background: gray; */
@@ -682,6 +698,10 @@ footer {
 
   /* Extra large screens */
 @media screen and (min-width: 1202px) {
+    main {
+        width: 528px;
+    }
+    
     #header {
         background: linear-gradient(to right, #e9492a 20%,#e72357);
         /* background: blue; */
@@ -774,4 +794,4 @@ footer {
     .dissapear{
         display: block;
     }
-} 
+}
