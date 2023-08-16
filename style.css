@@ -43,9 +43,12 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    /* min-height: 100vh; */
+    
 }
 
 header{
+    /* position: absolute; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -60,13 +63,20 @@ main{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    /* top: 169px; */
     padding: 29px 29px 18px 29px;
+    /* z-index: 1; */
     width: 528px;
     max-width: 100%;
     margin: 0 auto;
+    /* height: auto; */
+    /* height: 663px; */
+    /* padding-bottom: 200px; */
 }
 
 footer{
+    
+    /* padding-top: 20px; */
     width: 100%;
     margin-top: auto;
 }
@@ -602,7 +612,13 @@ footer{
         grid-column: 1;   
     }
     
-
+    /* .smallCards{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 85px;
+    } */
     .dissapear{
         display: block;
     }
