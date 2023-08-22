@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mandarin Mandatrends</title>
+    <link rel="shortcut icon" href="https://i.imgur.com/0ACB0P2.png" type="image/x-icon">
+    <style>
+    h1 {
+        margin-top: -8px;
+        margin-bottom: -8px;
+    }
+    h3 {
+        display: block;
+    }
+    #foodCard h3 {
+        font-size: 1.1em;
+        margin-top: 16px;
+        margin-bottom: 8px;
+    }
+    #trailCard h3 {
+        font-size: 1.15em;
+        margin-top: 4px;
+        margin-bottom: 4px;
+    }
+    p {
+        font-size: 11pt;
+        color: #757676;
+    }
+    a {
+        text-decoration: none;
+    }
+    a:visited {
+        color: inherit;
+    }
+    body {
+        margin: 0;
+        background: #ffffff;
+        overflow-x: hidden;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+    #content {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
+    main {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 29px 29px 18px 29px;
+        width: 528px;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    footer {
+        width: 100%;
+        margin-top: auto;
+    }
+    #footerLogo {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background:#FB4C03;
+        height: 81px;
+        width: 100%;
+        bottom: 0px;
+    }
+    #footerCopyright {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: #F1F1F1;
+        height: 64px;
+    }
+    .dissapear {
+        display: none;
+    }
+    /* Small mobile screens */
+    @media screen and (min-width: 0px) {
+        main {
+            width: auto;
+        }
+        #header {
+            background: linear-gradient(to right, #e9492a 20%,#e72357);
+            /*background-color: black; */
+            width: 100vw;
+            height: 140px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            overflow: hidden;
+        }
+        #blurred-lines {
+            position: absolute;
+            top: 21px;
+            left: -40px;
+        }
+        #mandatrends-header {
+            position: absolute;
+            height: 45px;
+            left: 31px;
+            z-index: 1;
+        }
+        #bolinhas {
+            height: 62px;
+            position: absolute;
+            top: 114px;
+            left: 100px;
+        }
+        #mulher {
+            position: absolute;
+            height: 134px;
+            top: 62px;
+            align-self: center;
+            margin-left: 110px;
+        }
+        #arrows {
+            position: absolute;
+            height: 21px;
+            top: 20px;
+            margin-left: 40px;
+        }
+        #triangle {
+            position: absolute;
+            height: 20px;
+            top: 5px;
+            right: 0px;
+        }
+        #nrf {
+            position: absolute;
+            height: 45px;
+            top: 30px;
+            right: 5px;
+            display: block;
+        }
+        #squiggle {
+            position: absolute;
+            height: 6px;
+            top: 110px;
+            right: 5px;
+            display: block;
+        }
+        #container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 40px;
+        }
+        #subContainer{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 40px;
+        }
+        .longCardImg{
+            height: 127px;
+            margin-bottom:10px;
+        }
+        .longTitle{
+            width: 282px;
+        }
+        .longText{
+            width: 278px;
+        }
+        .longCardDescription{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: column;
+            height: 95px;
+        }
+        #nbaCard{
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: column;
+        }
+        #nbaCardImg{
+            width: 211px;
+            margin-bottom: 10px;
+        }
+        #nbaCardDescription{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: column;
+            height: 76px;
+        }
+        #nbaTitle{
+            width: 190px;
+            margin-bottom: 3px;
+        }
+        #WhatsAppCard{
+            display: flex;
+            justify-content: start;
+            flex-direction: column;
+        }
+        #WhatsAppCardImg{
+            width: 221px;
+            margin-bottom: 9px;
+        }
+        #WhatsAppCardDescription{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: column;
+            height: 76px;
+        }
+        #WhatsAppTitle{
+            width: 190px;
+            margin-bottom: 2px;
+        }
+        .dissapear{
+            display: none;
+        }
+    }
+    /* Small mobile screens */
+    @media screen and (min-width: 375px) {
+        main {
+            width: auto;
+        }
+        #header {
+            background: linear-gradient(to right, #e9492a 20%,#e72357);
+            /*background-color: red; */
+            width: 100vw;
+            height: 140px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            overflow: hidden;
+        }
+        #blurred-lines {
+            position: absolute;
+            top: 21px;
+            left: -36px;
+        }
+        #mandatrends-header {
+            position: absolute;
+            height: 48px;
+            left: 35px;
+            z-index: 1;
+        }
+        #bolinhas {
+            height: 62px;
+            position: absolute;
+            top: 114px;
+            left: 130px;
+        }
+        #mulher {
+            position: absolute;
+            height: auto;
+            top: 51px;
+            align-self: center;
+            margin-left: 55px;
+        }
+        #arrows {
+            position: absolute;
+            height: 21px;
+            top: 20px;
+            margin-left: -30px;
+        }
+        #triangle {
+            position: absolute;
+            top: 5px;
+            right: 0px;
+        }
+        #nrf {
+            position: absolute;
+            height: 60px;
+            top: 30px;
+            right: 10px;
+            display: block;
+        }
+        #squiggle {
+            position: absolute;
+            height: 8px;
+            top: 110px;
+            right: 30px;
+            display: block;
+        }
+        #container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 40px;
+        }
+        #subContainer{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 40px;
+        }
+        .longCardImg{
+            height: 165px;
+            margin-bottom:10px;
+        }
+        .longTitle{
+            width: 365px;
+        }
+        .longText{
+            width: 360px;
+        }
+        .longCardDescription{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: column;
+            height: 95px;
+        }
+        #nbaCard{
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: column;
+        }
+        #nbaCardImg{
+            width: 251px;
+            margin-bottom: 10px;
+        }
+        #nbaCardDescription{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: column;
+            height: 76px;
+        }
+        #nbaTitle{
+            margin-bottom: 3px;
+        }
+        #WhatsAppCard{
+            display: flex;
+            justify-content: start;
+            flex-direction: column;
+        }
+        #WhatsAppCardImg{
+            width: 261px;
+            margin-bottom: 9px;
+        }
+        #WhatsAppCardDescription{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: column;
+            height: 76px;
+        }
+        #WhatsAppTitle{
+            margin-bottom: 2px;
+        }
+        .dissapear{
+            display: none;
+        }
+    }
+    /* Tablet screens */
+    @media screen and (min-width: 575px) {
+        main {
+            width: 528px;
+        }
+        #header {
+            background: linear-gradient(to right, #e9492a 35%,#e72357 70%);
+            /* background-color: purple; */
+            width: 100vw;
+            height: 140px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            overflow: hidden;
+        }
+        #blurred-lines {
+            position: absolute;
+            top: 21px;
+            left: -17px;
+        }
+        #mandatrends-header {
+            position: absolute;
+            height: 67px;
+            left: 40px;
+            z-index: 1;
+        }
+        #bolinhas {
+            height: 62px;
+            position: absolute;
+            top: 114px;
+            left: 235px;
+        }
+        #mulher {
+            position: absolute;
+            top: 51px;
+            align-self: center;
+            margin-left: 107px;
+        }
+        #arrows {
+            position: absolute;
+            top: 20px;
+            margin-left: 20px;
+        }
+        #triangle {
+            position: absolute;
+            top: 5px;
+            right: 20px;
+        }
+        #nrf {
+            position: absolute;
+            height: 71px;
+            top: 30px;
+            right: 38px;
+            display: block;
+        }
+        #squiggle {
+            position: absolute;
+            height: 8px;
+            top: 110px;
+            right: 40px;
+        }
+        #container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 37px;
+            /* NRF Height 345px */
+            /* NBA Height 281px */
+        }
+        #subContainer{
+            display: flex;
+            justify-content: center;
+            align-items:flex-start;
+            flex-direction: row;
+            gap: 14px;
+        }
+        #longCardContainer{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .longCard{
+            display: flex;
+            justify-content: start;
+            flex-direction: column;
+        }
+        .longCardImg{
+            margin-bottom: 12px;
+            height: auto;
+        }
+        .longCardDescription{
+            display: flex;
+            align-items: start;
+            justify-content: space-between;
+            flex-direction: column;
+            height: 95px;
+        }
+        .longTitle{
+            width: auto;
+            padding-left: 2px;
+        }
+        .longText{
+            width: auto;
+            padding-left: 1px;
+            margin-top: -1px;
+            margin-bottom: 8px;
+        }
+        .longSource{
+            padding-left: 1px;
+        }
+        .longLine{
+            padding-left: 0px;
+        }
+        .longLinePhone{
+            padding-top: 7px;
+            padding-left: 0px;
+        }
+        #nbaCard{
+            display: flex;
+            justify-content: start;
+            flex-direction: column;
+        }
+        #nbaCardImg{
+            width: 251px;
+            margin-bottom: 10px;
+        }
+        #nbaCardDescription{
+            display: flex;
+            align-items: start;
+            justify-content: space-between;
+            flex-direction: column;
+            height: 76px;
+        }
+        #nbaTitle{
+            margin-bottom: 3px;
+        }
+        #WhatsAppCard{
+            display: flex;
+            justify-content: start;
+            flex-direction: column;
+        }
+        #WhatsAppCardImg{
+            width: 261px;
+            margin-bottom: 9px;
+        }
+        #WhatsAppCardDescription{
+            display: flex;
+            align-items: start;
+            justify-content: space-between;
+            flex-direction: column;
+            height: 76px;
+        }
+        #WhatsAppTitle{
+            margin-bottom: 2px;
+        }
+        .dissapear{
+            display: none;
+        }
+    }
+    /* Laptop screens */
+    @media screen and (min-width: 769px) {
+        main {
+            width: 528px;
+        }
+        #header {
+            background: linear-gradient(to right, #e9492a 20%,#e72357);
+            /* background: gray; */
+            width: 100vw;
+            height: 140px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            overflow: hidden;
+        }
+        #blurred-lines {
+            position: absolute;
+            top: 21px;
+            left: -17px;
+        }
+        #mandatrends-header {
+            position: absolute;
+            height: 67px;
+            left: 40px;
+        }
+        #bolinhas {
+            height: 62px;
+            position: absolute;
+            top: 114px;
+            left: 235px;
+        }
+        #mulher {
+            position: absolute;
+            top: 51px;
+            align-self: center;
+            margin-left: 107px;
+        }
+        #arrows {
+            position: absolute;
+            top: 20px;
+            margin-left: 20px;
+        }
+        #triangle {
+            position: absolute;
+            top: 5px;
+            right: 20px;
+        }
+        #nrf {
+            position: absolute;
+            height: 71px;
+            top: 30px;
+            right: 38px;
+            display: block;
+        }
+        #squiggle {
+            position: absolute;
+            height: 10px;
+            top: 110px;
+            right: 40px;
+        }
+    }
+    </style>
+</head>
+
+<body>
+    <div id="content">
+
+        <header>
+            <div id="header">
+                <img id="blurred-lines" src="https://i.imgur.com/ORVvHCv.png" alt="blurred-lines"> 
+                <img id="mandatrends-header" src="https://i.imgur.com/vMB4ys8.png" alt="mandatrends-header"> 
+                <img id="bolinhas" src="https://i.imgur.com/fnhKKju.png" alt="bolinhas"> 
+                <img id="mulher" src="https://i.imgur.com/0ACB0P2.png" alt="mulher"> 
+                <img id="arrows" src="https://i.imgur.com/heKm7Aj.png" alt="arrows"> 
+                <img id="triangle" src="https://i.imgur.com/CnkvtZ6.png" alt="triangle"> 
+                <img id="nrf" src="https://i.imgur.com/UgibK9y.png" alt="NRF2020 edição 6"> 
+                <img id="squiggle" src="https://i.imgur.com/6g1wz9j.png" alt="squiggle">
+            </div>
+        </header>
+
+        <main>
+            <article>
+                <div id="container">
+                    
+                    <div id="longCardContainer">
+                        
+                        <div class="longCard">
+                            <a href="https://business.adobe.com/blog/the-latest/5-takeaways-from-nrf-2020-vision-retail-s-big-show" target="_blank" rel="external">
+                            <div class="link">
+                                <img class="longCardImg" src="https://i.imgur.com/5BsrOhn.png" alt="NRF2020">
+                                    <div class="longCardDescription">
+                                        <img class="longTitle" src="https://i.imgur.com/dnea2Dq.png" alt="NRF 2020 title"> 
+                                        <img class="longText" src="https://i.imgur.com/6QwcGDV.png" alt="NRF text"> 
+                                        <img class="longSource" src="https://i.imgur.com/NACkGs8.png" alt="source adobe"> 
+                                        <img class="longLine" src="https://i.imgur.com/yrxwGAn.png" alt="design adobe">
+                                    </div>
+                            </div>
+                        </a>
+                        </div>
+                    </div>
+
+                    <div id="subContainer">
+                        <div id="nbaCard">
+                            <a href="https://www.dailymail.co.uk/news/article-7935431/Hundreds-thousands-Kobe-Bryant-fans-sign-petition-make-image-new-NBA-logo.html" target="_blank" rel="external">
+                            <div class="link">
+                            <img id="nbaCardImg" src="https://i.imgur.com/dT9mFsa.png" alt="Kobe">
+                            <div id="nbaCardDescription">
+                                <img id="nbaTitle" src="https://i.imgur.com/evg2IHw.png" alt="NBA article title"> 
+                                <img id="nbaSource" src="https://i.imgur.com/1KRBBwo.png" alt="source daily mail"> 
+                                <img id="nbaLine" src="https://i.imgur.com/mUKvwkA.png" alt="nba style design">
+                            </div>
+                            </div>
+                        </a>
+                        </div>
+
+                        <div id="WhatsAppCard">
+                            <a href="https://g1.globo.com/economia/tecnologia/noticia/2020/06/15/whatsapp-vai-permitir-enviar-e-receber-dinheiro-pelo-aplicativo-brasil-sera-primeiro-pais-com-a-novidade.ghtml" target="_blank" rel="external">
+                            <div class="link">
+                            <img id="WhatsAppCardImg" src="https://i.imgur.com/CxddF6A.png" alt="WhatsApp">
+                            <div id="WhatsAppCardDescription">
+                                <img id="WhatsAppTitle" src="https://i.imgur.com/0qTrPaR.png" alt="WhatsApp article title"> 
+                                <img id="WhatsAppSource" src="https://i.imgur.com/NVdaDMy.png" alt="source proxxima"> 
+                                <img id="WhatsAppLine" src="https://i.imgur.com/dUJhp7l.png" alt="WhatsApp style design">
+                            </div>
+                            </div>
+                        </a>
+                        </div>
+                    </div>
+
+                </div>
+            </article>
+        </main>
+
+        <footer>
+            <div id="footer">
+            <div id="footerLogo">
+                <a href="https://mandarin.com.br/" target="_blank" rel="external noopener">
+                <img src="https://i.imgur.com/WzmMt4z.png" alt="Mandarin Logo">
+                </a>
+            </div>
+            <div id="footerCopyright">
+                <img id="copyrightImg" src="https://i.imgur.com/eIZDopZ.png" alt="Mandarin Copyright">
+            </div>
+            </div>
+        </footer>
+
+</div>
+
+</body>
+</html>

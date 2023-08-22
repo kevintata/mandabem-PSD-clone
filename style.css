@@ -111,7 +111,7 @@ footer {
 
 
 /* Small mobile screens */
-@media screen and (min-width: 0px) {
+@media screen and (max-width: 570px) {
     main {
         width: auto;
     }
@@ -202,6 +202,7 @@ footer {
 
     .longCardImg{
         height: 125px;
+        margin-bottom:10px;
     }
     .longTitle{
         width: 280px;
@@ -235,6 +236,7 @@ footer {
         height: 76px;
     }
     #nbaTitle{
+        width: 190px;
         margin-bottom: 3px;
     }
 
@@ -255,6 +257,7 @@ footer {
         height: 76px;
     }
     #WhatsAppTitle{
+        width: 190px;
         margin-bottom: 2px;
     }
 
